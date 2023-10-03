@@ -7,6 +7,7 @@ const prompt = (bankStatement) => {
         "bankName": Access Bank,
         "accountName": John Doe
         "accountNumber": 1983839300,
+        "currentBalance": 55000
         "period": June 13th, 2023 - September 25th, 2023
         "summary": {
           "transfers": total sum of all debit transactions that are transfers e.g 15,000,
