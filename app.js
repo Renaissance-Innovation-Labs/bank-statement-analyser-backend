@@ -21,7 +21,7 @@ app.post('/api/v1/upload', imageupload(), async (req, res, next) => {
       messages: [
         {
           role: 'system',
-          content: '[Array]"Your output as JavaScript Array:"',
+          content: '[Object]"Your output as JavaScript Object:"',
         },
         { role: 'user', content: prompt(result.text.slice(0, 2000)) },
       ],

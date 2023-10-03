@@ -1,7 +1,7 @@
 const prompt = (bankStatement) => {
   return `analyse this bank statement ${bankStatement} and give me an accumulation of the amounts of each type transaction 
     i.e POS withdrawals, ATM withdrawals, Transfers etc. Also give me a summation of all my credits and debits return the result as a javascript
-    Array in this format  {
+    Object in this format  {
         "totalWithdrawals": 1500000,
         "totalLodgements": 3000000,
         "bankName": Access Bank,
