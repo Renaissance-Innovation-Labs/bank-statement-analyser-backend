@@ -5,6 +5,7 @@ const prompt = (bankStatement) => {
         "totalWithdrawals": 1500000,
         "totalLodgements": 3000000,
         "bankName": Access Bank,
+        "accountName": John Doe
         "accountNumber": 1983839300,
         "period": June 13th, 2023 - September 25th, 2023
         "summary": {
