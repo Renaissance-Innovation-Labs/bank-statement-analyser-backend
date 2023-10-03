@@ -3,11 +3,13 @@ const imageupload = require('express-fileupload');
 
 const app = express();
 const pdfParse = require('pdf-parse');
+const cors = require('cors');
 
 const openai = require('./openai');
 const prompt = require('./prompts/analysisPrompt');
 
 app.use(express.json());
+app.use(cors());
 
 app.post('/api/v1/upload', imageupload(), async (req, res, next) => {
   try {
