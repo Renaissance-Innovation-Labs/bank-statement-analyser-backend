@@ -14,8 +14,6 @@ app.use(cors());
 app.post('/api/v1/upload', imageupload(), async (req, res, next) => {
   try {
     const result = await pdfParse(req.files.statement);
-    // console.log('result', result);
-    // console.log('result', prompt(result.text));
 
     const completion = await openai.createChatCompletion({
       messages: [
@@ -29,7 +27,7 @@ app.post('/api/v1/upload', imageupload(), async (req, res, next) => {
     });
 
     // const { data } = completion.data.choices[0].message;
-    console.log('data', completion.data.choices[0].message.content);
+    // console.log('data', completion.data.choices[0].message.content);
 
     const data = completion.data.choices[0].message.content;
 
